@@ -51,6 +51,9 @@ export default function ItemList() {
                            returnKeyType={"done"} onSubmitEditing={addToList}/>
                 <Button mode="contained" onPress={addToList}>ADD</Button>
             </View>
+
+
+            {/*Deleting things*/}
             {list.map((item) => {
                 return <TouchableOpacity style={styles.outsideTextContain} key={item.key} onPress={() => {
                     setList(cur => {
